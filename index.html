@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-EN">
+  <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <meta name="author" content="David Calavera" />
+     <meta name="description" content="run rails applications within an embedded apache tomcat"/>
+     <meta name="keywords" content="tomcat-rails, tomcat, rails"/>
+     <link rel="stylesheet" href="css/main.css" type="text/css" />
+     <link rel="stylesheet" href="css/highlight.css" type="text/css" />
+
+     <title>Trinidad</title>
+  </head>
+  <body>
+    <div class="site">
+      <div id="title">
+        <h1>Trinidad</h1>
+      </div>
+      <div id="content">
+        
+        <div class="note">
+          <p>This project was initially called Tomcat-rails. Due to legal issues ralated with the apache tomcat's trademarks it has been renamed.</p>
+          
+          <p>You can read more on these issues on <a href="http://thinkincode.net/2009/7/6/tomcat-rails-is-now-called-trinidad">my blog</a>.</p>
+        </div>
+        
+        <p>Trinidad allows you to run rails applications within an embedded <a href="http://tomcat.apache.org">Apache Tomcat</a> container.</p>
+        
+        <p>Apache Tomcat is a lightweight java web server developed and released under the <a href="http://apache.org">Apache Software Foundation</a>.</p>
+        
+        <div>
+          <h2>installing</h2>
+          
+          <div class="highlight"><pre><span class="n">jgem</span> <span class="n">install</span> <span class="n">trinidad</span>
+          </pre></div>
+        <div> <!-- end installing-->
+          
+        <div>
+          <h2>usage</h2>
+          
+          <div class="highlight"><pre><span class="n">cd</span> <span class="n">myrailsapp</span>
+<span class="n">jruby</span> <span class="o">-</span><span class="n">S</span> <span class="n">trinidad</span>
+          </pre></div>
+          
+        </div> <!-- end usage -->
+        
+        <div>
+          <h2>configuration</h2>
+            
+          <p>check the currently supported configuration options in the <a href="http://github.com/calavera/trinidad/blob/447c457bfaaee8b598de40752a5f892beb7ed9e4/README.rdoc">readme page</a>.
+        </div> <!-- end configuration -->
+        
+        <div>
+          <h2>getting the source</h2>
+          
+          <p> from github: <a href="http://github.com/calavera/trinidad/tree/master">http://github.com/calavera/trinidad/tree/master</a></p>
+          
+          <div class="highlight"><pre><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">calavera</span><span class="o">/</span><span class="n">trinidad</span>.</span><span class="n">git</span>
+          </pre></div>
+          
+        </div>  <!-- end getting the source -->
+        
+        <div>
+          <h2>license</h2>
+          
+          <p>Trinidad is distributed under the terms of The MIT License.</p>
+          </p>Copyright © 2009 <a href="mailto:calavera@apache.org">David Calavera</a></p>
+          
+          <p class="ack">theme grabbed from my good friend <a href="http://lmcavalle.com">Luismi Cavalle</a>'s blog</p>
+        </div> <!-- end license -->
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-9275989-1");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+  </body>
+</html>
