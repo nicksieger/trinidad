@@ -17,6 +17,7 @@ begin
     gem.files = FileList['bin/*', 'lib/trinidad.rb', 'History.txt', 'LICENSE', 'README.rdoc', 'VERSION', *lib_files]
 
     gem.add_dependency 'rack', '>=1.0'
+    gem.add_dependency 'jruby-rack'
     gem.add_dependency 'trinidad_jars'
 
     gem.add_development_dependency 'rspec'

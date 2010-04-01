@@ -9,7 +9,8 @@ module Trinidad
   require 'tomcat-core'
   require 'jetty-util-6.1.14'
 
-  require "jruby-rack-0.9.5"
+  require "jruby-rack"
+  require JRubyJars.jruby_rack_jar_path
 
   module Tomcat
     include_package 'org.apache.catalina'
@@ -17,7 +18,7 @@ module Trinidad
     include_package 'org.apache.catalina.core'
     include_package 'org.apache.catalina.deploy'
     include_package 'org.apache.catalina.loader'
- 
+
     include_package 'org.apache.naming.resources'
 
     import 'org.apache.catalina.connector.Connector'
